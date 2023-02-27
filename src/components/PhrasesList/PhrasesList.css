@@ -1,0 +1,12 @@
+.phrase-list-item {
+    border-radius: 4px;
+    margin-top: 8px;
+    background-color: #69bc8b;
+    padding: 8px;
+}
+
+.delete-button {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 8px;
+}
