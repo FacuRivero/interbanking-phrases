@@ -1,6 +1,6 @@
 
 import { RemoveCircle } from '@mui/icons-material'
-import { IconButton, ListItem, ListItemText } from '@mui/material'
+import { Grid, IconButton, ListItem, ListItemText } from '@mui/material'
 import { IPhrase } from '../../context/PhrasesContext'
 import './PhrasesList.css'
 
@@ -10,27 +10,31 @@ interface Props {
 }
 
 function PhrasesList({ phrasesToRender, handleRemovePhrase }: Props) {
-  return <>    
+  return <Grid container spacing={2}>    
     {
       phrasesToRender.map((phrase) => (
-        <ListItem
-          key={phrase.id}
-          className="phrase-list-item"
-          disableGutters
-        >
-          <ListItemText primary={phrase.text} />
-          <IconButton
-            onClick={() => handleRemovePhrase(phrase.id)}
-            aria-label="Remove phrase"
-            className="delete-button"
-            data-testid={`delete-button-${phrase.id}`}
+        <Grid item xs={12} sm={6} md={4} key={phrase.id}>
+          <ListItem
+            className="phrase-list-item"
+            disableGutters
           >
-            <RemoveCircle />
-          </IconButton>
-        </ListItem>
+            <ListItemText 
+              primaryTypographyProps={{ className: 'list-item-text' }}
+              primary={phrase.text}
+            />
+            <IconButton
+              onClick={() => handleRemovePhrase(phrase.id)}
+              aria-label="Remove phrase"
+              className="delete-button"
+              data-testid={`delete-button-${phrase.id}`}
+            >
+              <RemoveCircle />
+            </IconButton>
+          </ListItem>
+        </Grid>
       ))
     }
-  </>
+  </Grid>
 }
 
 export default PhrasesList

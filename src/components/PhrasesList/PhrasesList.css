@@ -10,3 +10,10 @@
     color: #fff;
     margin-left: 8px;
 }
+
+.list-item-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 48px);
+}
