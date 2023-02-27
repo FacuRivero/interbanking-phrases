@@ -1,5 +1,5 @@
 # Frases
-Una aplicación desarrollada en React que permite agregar frases y mostrarlas en forma de "cards" dentro de una matriz. Además, se puede eliminar una frase y buscar dentro de las frases agregadas y filtrar las "cards" que contengan el texto buscado. La aplicación utiliza TypeScript y cuenta con una prueba unitaria.
+Una aplicación desarrollada en React que permite agregar frases y mostrarlas en forma de "cards" dentro de una matriz. Además, se puede eliminar una frase, buscar dentro de las frases agregadas y filtrar las "cards" que contengan el texto buscado. La aplicación utiliza TypeScript y cuenta con cinco prueba unitaria.
 
 ## Requisitos
 Para ejecutar la aplicación en local, necesitarás tener instalado **node y npm**.
@@ -40,9 +40,9 @@ npm run test
 ```
 
 ## Tecnologías utilizadas
-React
-TypeScript
-Material-UI
+- React
+- TypeScript
+- Material-UI
 
 ## Autor
 Facundo Rivero
